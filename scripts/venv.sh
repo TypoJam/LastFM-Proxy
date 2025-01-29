@@ -12,7 +12,8 @@ function activate {
 if [[ ! -f "$CONFIG_FILE" ]] then
     # Create example config file
     # NOTE: Empty for now
-    true # Fix empty then block
+    echo "LASTFM_API_KEY = \"abcef0123456789\"" >> $CONFIG_FILE
+    echo "LASTFM_API_SECRET = \"abcef0123456789\"" >> $CONFIG_FILE
 fi
 
 if [[ ! -d "$VENV_DIR" ]] then
