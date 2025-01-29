@@ -1,9 +1,10 @@
-import config
+from . import config
 import flask
 import hashlib
 import requests
 
 app = flask.Flask(__name__)
+application = app
 
 API_URL = "https://ws.audioscrobbler.com/2.0/"
 
