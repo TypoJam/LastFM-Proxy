@@ -4,7 +4,7 @@ Server that proxies last.fm requests coming from TypoJam so our API key/secret d
 
 # Quick Start
 ```sh
-$ . venv.sh
+$ . scripts/venv.sh
 $ micro app/config.py # Set up config
 $ flask --app app/index.py run --debug
 ```

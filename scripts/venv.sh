@@ -12,6 +12,7 @@ function activate {
 if [[ ! -f "$CONFIG_FILE" ]] then
     # Create example config file
     # NOTE: Empty for now
+    true # Fix empty then block
 fi
 
 if [[ ! -d "$VENV_DIR" ]] then
